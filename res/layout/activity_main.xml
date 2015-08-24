@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+    
+    	<RadioGroup
+    	    android:id="@+id/radiogrop"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerVertical="true"
+    	    android:orientation="horizontal">
+    		
+    		<RadioButton
+    		    android:id="@+id/english"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:checked="true"
+    		    android:text="英"/>
+    		
+    		<RadioButton
+    	    	android:id="@+id/chinese"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="中"/>
+    	
+    	</RadioGroup>
+    	
+    	
+    	
+    	<Button
+    	    android:id="@+id/okk"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentRight="true"
+    	    android:text="确定"/>
+    	
+	</RelativeLayout>
+    
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/bot"
+    android:layout_alignParentTop="true"> 
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="10dp"  >
+      
+      <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    	<CheckBox
+        	android:id="@+id/check"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="二值化"/>
+    	
+    	
+    	<Button
+    	    android:id="@+id/select"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentRight="true"
+    	    android:text="相册"/>
+    	
+    	<Button 
+    	    android:id="@+id/camera"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toLeftOf="@id/select"
+    	    android:text="拍照"/>
+    	
+      </RelativeLayout>
+    
+    	<EditText
+    	    android:id="@+id/result"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"/>
+    	
+    	<TextView
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="选取的图片"/>
+    	
+    	<ImageView 
+    	    android:id="@+id/oiv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"/>
+    	
+    	<TextView
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="处理后的图片"/>
+    	
+    	<ImageView
+    	    android:id="@+id/div"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"/>
+    	
+    </LinearLayout>
+</ScrollView>   
+    
+    
+    
+
+</RelativeLayout>
